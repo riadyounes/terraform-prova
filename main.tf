@@ -10,8 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  profile = "user-terraform"
-  region  = var.aws_region
+  region = var.aws_region
 }
 
 resource "aws_security_group" "web-access" {
